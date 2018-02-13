@@ -1,0 +1,72 @@
+<div>
+    <h2 data-translate="playasApp.variables_riesgos_web.home.title">Variables Riesgos Webs</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="variables-riesgos-web.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  data-translate="playasApp.variables_riesgos_web.home.createLabel">
+                        Create new Variables Riesgos Web
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    
+                    
+                    <th><span data-translate="playasApp.variables_riesgos_web.tipo_Variable">Tipo Variable</span></th>
+                    <th><span data-translate="playasApp.variables_riesgos_web.direccion">Direccion</span></th>
+                    <th><span data-translate="playasApp.variables_riesgos_web.oleaje_Tipo">Oleaje Tipo</span></th>
+                    <th><span data-translate="playasApp.variables_riesgos_web.oleaje_tamano">Oleaje Tamano</span></th>
+                    <th><span data-translate="playasApp.variables_riesgos_web.viento_velocidad">Viento Velocidad</span></th>
+                    <th><span data-translate="playasApp.variables_riesgos_web.marea_Rango">Marea Rango</span></th>
+                    <th><span data-translate="playasApp.variables_riesgos_web.marea_Momento">Marea Momento</span></th>
+                    <th><span data-translate="playasApp.variables_riesgos_web.fecha">Fecha</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="variables_riesgos_web in vm.variables_riesgos_webs track by variables_riesgos_web.id">
+                    
+                    
+                    <td>{{variables_riesgos_web.tipo_Variable}}</td>
+                    <td>{{variables_riesgos_web.direccion}}</td>
+                    <td>{{variables_riesgos_web.oleaje_Tipo}}</td>
+                    <td>{{variables_riesgos_web.oleaje_tamano}}</td>
+                    <td>{{variables_riesgos_web.viento_velocidad}}</td>
+                    <td>{{variables_riesgos_web.marea_Rango}}</td>
+                    <td>{{variables_riesgos_web.marea_Momento}}</td>
+                        <td>{{variables_riesgos_web.fecha | date:'mediumDate'}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="variables-riesgos-web-detail({id:variables_riesgos_web.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="variables-riesgos-web.edit({id:variables_riesgos_web.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="variables-riesgos-web.delete({id:variables_riesgos_web.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

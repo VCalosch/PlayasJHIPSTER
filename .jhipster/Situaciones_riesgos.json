@@ -1,0 +1,60 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "id_registro_riesgo",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "tipo_variable",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "direccion",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "oleaje_tamano",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "vieno_velocidad",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "marea_altura",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "marea_rango",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "marea_momento",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "probabilidad",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "severidad",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "evaluacion",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fecha",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20171213104100",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "situaciones_riesgos",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

@@ -1,0 +1,23 @@
+{
+    "playasApp": {
+        "tipologia_riesgos" : {
+            "home": {
+                "title": "Tipologia_riesgos",
+                "createLabel": "Genera un nuovo Tipologia Riesgos",
+                "createOrEditLabel": "Genera o modifica un Tipologia Riesgos"
+            },
+            "created": "&Egrave; stato generato un nuovo Tipologia Riesgos con identificatore {{ param }}",
+            "updated": "&Egrave; stato aggiornato Tipologia Riesgos identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato Tipologia Riesgos con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare Tipologia Riesgos {{ id }}?"
+            },
+            "detail": {
+                "title": "Tipologia Riesgos"
+            },
+            "detalle_topologia": "Detalle Topologia",
+            "id_Riesgo": "Id Riesgo",
+            "tipories": "Tipories"
+        }
+    }
+}

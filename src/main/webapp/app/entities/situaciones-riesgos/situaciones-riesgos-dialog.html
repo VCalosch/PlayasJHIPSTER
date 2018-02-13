@@ -1,0 +1,97 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="mySituaciones_riesgosLabel" data-translate="playasApp.situaciones_riesgos.home.createOrEditLabel">Create or edit a Situaciones Riesgos</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.situaciones_riesgos.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.situaciones_riesgos.id" readonly />
+        </div>
+
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.situaciones_riesgos.tipo_variable" for="field_tipo_variable">Tipo Variable</label>
+            <input type="number" class="form-control" name="tipo_variable" id="field_tipo_variable"
+                    ng-model="vm.situaciones_riesgos.tipo_variable"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.situaciones_riesgos.direccion" for="field_direccion">Direccion</label>
+            <input type="text" class="form-control" name="direccion" id="field_direccion"
+                    ng-model="vm.situaciones_riesgos.direccion"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.situaciones_riesgos.oleaje_tamano" for="field_oleaje_tamano">Oleaje Tamano</label>
+            <input type="text" class="form-control" name="oleaje_tamano" id="field_oleaje_tamano"
+                    ng-model="vm.situaciones_riesgos.oleaje_tamano"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.situaciones_riesgos.vieno_velocidad" for="field_vieno_velocidad">Vieno Velocidad</label>
+            <input type="text" class="form-control" name="vieno_velocidad" id="field_vieno_velocidad"
+                    ng-model="vm.situaciones_riesgos.vieno_velocidad"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.situaciones_riesgos.marea_altura" for="field_marea_altura">Marea Altura</label>
+            <input type="text" class="form-control" name="marea_altura" id="field_marea_altura"
+                    ng-model="vm.situaciones_riesgos.marea_altura"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.situaciones_riesgos.marea_rango" for="field_marea_rango">Marea Rango</label>
+            <input type="number" class="form-control" name="marea_rango" id="field_marea_rango"
+                    ng-model="vm.situaciones_riesgos.marea_rango"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.situaciones_riesgos.marea_momento" for="field_marea_momento">Marea Momento</label>
+            <input type="number" class="form-control" name="marea_momento" id="field_marea_momento"
+                    ng-model="vm.situaciones_riesgos.marea_momento"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.situaciones_riesgos.probabilidad" for="field_probabilidad">Probabilidad</label>
+            <input type="text" class="form-control" name="probabilidad" id="field_probabilidad"
+                    ng-model="vm.situaciones_riesgos.probabilidad"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.situaciones_riesgos.severidad" for="field_severidad">Severidad</label>
+            <input type="text" class="form-control" name="severidad" id="field_severidad"
+                    ng-model="vm.situaciones_riesgos.severidad"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.situaciones_riesgos.evaluacion" for="field_evaluacion">Evaluacion</label>
+            <input type="text" class="form-control" name="evaluacion" id="field_evaluacion"
+                    ng-model="vm.situaciones_riesgos.evaluacion"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.situaciones_riesgos.fecha" for="field_fecha">Fecha</label>
+                <div class="input-group">
+                    <input id="field_fecha" type="text" class="form-control" name="fecha" uib-datepicker-popup="{{dateformat}}" ng-model="vm.situaciones_riesgos.fecha" is-open="vm.datePickerOpenStatus.fecha"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('fecha')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

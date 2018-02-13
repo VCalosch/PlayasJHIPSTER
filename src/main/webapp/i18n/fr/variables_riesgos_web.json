@@ -1,0 +1,29 @@
+{
+    "playasApp": {
+        "variables_riesgos_web" : {
+            "home": {
+                "title": "Variables_riesgos_webs",
+                "createLabel": "Créer un nouveau Variables Riesgos Web",
+                "createOrEditLabel": "Créer ou éditer un Variables Riesgos Web"
+            },
+            "created": "Un nouveau Variables Riesgos Web a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Variables Riesgos Web avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Variables Riesgos Web avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Variables Riesgos Web {{ id }} ?"
+            },
+            "detail": {
+                "title": "Variables Riesgos Web"
+            },
+            "id_Registro_Riesgo": "Id Registro Riesgo",
+            "tipo_Variable": "Tipo Variable",
+            "direccion": "Direccion",
+            "oleaje_Tipo": "Oleaje Tipo",
+            "oleaje_tamano": "Oleaje Tamano",
+            "viento_velocidad": "Viento Velocidad",
+            "marea_Rango": "Marea Rango",
+            "marea_Momento": "Marea Momento",
+            "fecha": "Fecha"
+        }
+    }
+}

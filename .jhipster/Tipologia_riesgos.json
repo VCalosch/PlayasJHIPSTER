@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "tipories",
+            "otherEntityName": "riesgos",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "detalle_riesgo"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "detalle_topologia",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "id_Riesgo",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20171213103211",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "tipologia_riesgos",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

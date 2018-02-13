@@ -1,0 +1,55 @@
+
+<div>
+    <h2><span data-translate="playasApp.variables_riesgos_web.detail.title">Variables Riesgos Web</span> {{vm.variables_riesgos_web.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="playasApp.variables_riesgos_web.id_Registro_Riesgo">Id Registro Riesgo</span></dt>
+        <dd>
+            <span>{{vm.variables_riesgos_web.id_Registro_Riesgo}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.variables_riesgos_web.tipo_Variable">Tipo Variable</span></dt>
+        <dd>
+            <span>{{vm.variables_riesgos_web.tipo_Variable}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.variables_riesgos_web.direccion">Direccion</span></dt>
+        <dd>
+            <span>{{vm.variables_riesgos_web.direccion}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.variables_riesgos_web.oleaje_Tipo">Oleaje Tipo</span></dt>
+        <dd>
+            <span>{{vm.variables_riesgos_web.oleaje_Tipo}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.variables_riesgos_web.oleaje_tamano">Oleaje Tamano</span></dt>
+        <dd>
+            <span>{{vm.variables_riesgos_web.oleaje_tamano}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.variables_riesgos_web.viento_velocidad">Viento Velocidad</span></dt>
+        <dd>
+            <span>{{vm.variables_riesgos_web.viento_velocidad}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.variables_riesgos_web.marea_Rango">Marea Rango</span></dt>
+        <dd>
+            <span>{{vm.variables_riesgos_web.marea_Rango}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.variables_riesgos_web.marea_Momento">Marea Momento</span></dt>
+        <dd>
+            <span>{{vm.variables_riesgos_web.marea_Momento}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.variables_riesgos_web.fecha">Fecha</span></dt>
+        <dd>
+            <span>{{vm.variables_riesgos_web.fecha | date:'mediumDate'}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="variables-riesgos-web-detail.edit({id:vm.variables_riesgos_web.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

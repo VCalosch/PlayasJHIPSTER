@@ -1,0 +1,31 @@
+
+<div>
+    <h2><span data-translate="playasApp.tipologia_riesgos.detail.title">Tipologia Riesgos</span> {{vm.tipologia_riesgos.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="playasApp.tipologia_riesgos.detalle_topologia">Detalle Topologia</span></dt>
+        <dd>
+            <span>{{vm.tipologia_riesgos.detalle_topologia}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.tipologia_riesgos.id_Riesgo">Id Riesgo</span></dt>
+        <dd>
+            <span>{{vm.tipologia_riesgos.id_Riesgo}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.tipologia_riesgos.tipories">Tipories</span></dt>
+        <dd>
+            <a ui-sref="riesgos-detail({id:vm.tipologia_riesgos.tipories.id})">{{vm.tipologia_riesgos.tipories.detalle_riesgo}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="tipologia-riesgos-detail.edit({id:vm.tipologia_riesgos.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

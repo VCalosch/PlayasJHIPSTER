@@ -1,0 +1,48 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "id_Registro_Riesgo",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "tipo_Variable",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "direccion",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "oleaje_Tipo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "oleaje_tamano",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "viento_velocidad",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "marea_Rango",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "marea_Momento",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fecha",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20171213105120",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "variables_riesgos_web",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

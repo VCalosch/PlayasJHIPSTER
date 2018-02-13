@@ -1,0 +1,32 @@
+{
+    "playasApp": {
+        "situaciones_riesgos" : {
+            "home": {
+                "title": "Situaciones Riesgos",
+                "createLabel": "Create a new Situaciones Riesgos",
+                "createOrEditLabel": "Create or edit a Situaciones Riesgos"
+            },
+            "created": "A new Situaciones Riesgos is created with identifier {{ param }}",
+            "updated": "A Situaciones Riesgos is updated with identifier {{ param }}",
+            "deleted": "A Situaciones Riesgos is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Situaciones Riesgos {{ id }}?"
+            },
+            "detail": {
+                "title": "Situaciones Riesgos"
+            },
+            "id_registro_riesgo": "Id Registro Riesgo",
+            "tipo_variable": "Tipo Variable",
+            "direccion": "Direccion",
+            "oleaje_tamano": "Oleaje Tamano",
+            "vieno_velocidad": "Vieno Velocidad",
+            "marea_altura": "Marea Altura",
+            "marea_rango": "Marea Rango",
+            "marea_momento": "Marea Momento",
+            "probabilidad": "Probabilidad",
+            "severidad": "Severidad",
+            "evaluacion": "Evaluacion",
+            "fecha": "Fecha"
+        }
+    }
+}

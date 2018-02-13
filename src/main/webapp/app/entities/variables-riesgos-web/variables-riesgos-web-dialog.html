@@ -1,0 +1,79 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myVariables_riesgos_webLabel" data-translate="playasApp.variables_riesgos_web.home.createOrEditLabel">Create or edit a Variables Riesgos Web</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.variables_riesgos_web.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.variables_riesgos_web.id" readonly />
+        </div>
+
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.variables_riesgos_web.tipo_Variable" for="field_tipo_Variable">Tipo Variable</label>
+            <input type="text" class="form-control" name="tipo_Variable" id="field_tipo_Variable"
+                    ng-model="vm.variables_riesgos_web.tipo_Variable"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.variables_riesgos_web.direccion" for="field_direccion">Direccion</label>
+            <input type="text" class="form-control" name="direccion" id="field_direccion"
+                    ng-model="vm.variables_riesgos_web.direccion"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.variables_riesgos_web.oleaje_Tipo" for="field_oleaje_Tipo">Oleaje Tipo</label>
+            <input type="text" class="form-control" name="oleaje_Tipo" id="field_oleaje_Tipo"
+                    ng-model="vm.variables_riesgos_web.oleaje_Tipo"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.variables_riesgos_web.oleaje_tamano" for="field_oleaje_tamano">Oleaje Tamano</label>
+            <input type="number" class="form-control" name="oleaje_tamano" id="field_oleaje_tamano"
+                    ng-model="vm.variables_riesgos_web.oleaje_tamano"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.variables_riesgos_web.viento_velocidad" for="field_viento_velocidad">Viento Velocidad</label>
+            <input type="number" class="form-control" name="viento_velocidad" id="field_viento_velocidad"
+                    ng-model="vm.variables_riesgos_web.viento_velocidad"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.variables_riesgos_web.marea_Rango" for="field_marea_Rango">Marea Rango</label>
+            <input type="text" class="form-control" name="marea_Rango" id="field_marea_Rango"
+                    ng-model="vm.variables_riesgos_web.marea_Rango"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.variables_riesgos_web.marea_Momento" for="field_marea_Momento">Marea Momento</label>
+            <input type="text" class="form-control" name="marea_Momento" id="field_marea_Momento"
+                    ng-model="vm.variables_riesgos_web.marea_Momento"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="playasApp.variables_riesgos_web.fecha" for="field_fecha">Fecha</label>
+                <div class="input-group">
+                    <input id="field_fecha" type="text" class="form-control" name="fecha" uib-datepicker-popup="{{dateformat}}" ng-model="vm.variables_riesgos_web.fecha" is-open="vm.datePickerOpenStatus.fecha"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('fecha')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

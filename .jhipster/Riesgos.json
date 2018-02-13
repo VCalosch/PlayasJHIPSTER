@@ -1,0 +1,16 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "detalle_riesgo",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171213102646",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "riesgos",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

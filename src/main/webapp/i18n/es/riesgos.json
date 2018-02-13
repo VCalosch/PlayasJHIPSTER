@@ -1,0 +1,21 @@
+{
+    "playasApp": {
+        "riesgos" : {
+            "home": {
+                "title": "Riesgos",
+                "createLabel": "Crear nuevo Riesgos",
+                "createOrEditLabel": "Crear o editar Riesgos"
+            },
+            "created": "Un nuevo Riesgos ha sido creado con el identificador {{ param }}",
+            "updated": "Un Riesgos ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Riesgos ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Riesgos {{ id }}?"
+            },
+            "detail": {
+                "title": "Riesgos"
+            },
+            "detalle_riesgo": "Detalle Riesgo"
+        }
+    }
+}

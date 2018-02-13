@@ -1,0 +1,67 @@
+
+<div>
+    <h2><span data-translate="playasApp.situaciones_riesgos.detail.title">Situaciones Riesgos</span> {{vm.situaciones_riesgos.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="playasApp.situaciones_riesgos.id_registro_riesgo">Id Registro Riesgo</span></dt>
+        <dd>
+            <span>{{vm.situaciones_riesgos.id_registro_riesgo}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.situaciones_riesgos.tipo_variable">Tipo Variable</span></dt>
+        <dd>
+            <span>{{vm.situaciones_riesgos.tipo_variable}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.situaciones_riesgos.direccion">Direccion</span></dt>
+        <dd>
+            <span>{{vm.situaciones_riesgos.direccion}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.situaciones_riesgos.oleaje_tamano">Oleaje Tamano</span></dt>
+        <dd>
+            <span>{{vm.situaciones_riesgos.oleaje_tamano}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.situaciones_riesgos.vieno_velocidad">Vieno Velocidad</span></dt>
+        <dd>
+            <span>{{vm.situaciones_riesgos.vieno_velocidad}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.situaciones_riesgos.marea_altura">Marea Altura</span></dt>
+        <dd>
+            <span>{{vm.situaciones_riesgos.marea_altura}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.situaciones_riesgos.marea_rango">Marea Rango</span></dt>
+        <dd>
+            <span>{{vm.situaciones_riesgos.marea_rango}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.situaciones_riesgos.marea_momento">Marea Momento</span></dt>
+        <dd>
+            <span>{{vm.situaciones_riesgos.marea_momento}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.situaciones_riesgos.probabilidad">Probabilidad</span></dt>
+        <dd>
+            <span>{{vm.situaciones_riesgos.probabilidad}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.situaciones_riesgos.severidad">Severidad</span></dt>
+        <dd>
+            <span>{{vm.situaciones_riesgos.severidad}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.situaciones_riesgos.evaluacion">Evaluacion</span></dt>
+        <dd>
+            <span>{{vm.situaciones_riesgos.evaluacion}}</span>
+        </dd>
+        <dt><span data-translate="playasApp.situaciones_riesgos.fecha">Fecha</span></dt>
+        <dd>
+            <span>{{vm.situaciones_riesgos.fecha | date:'mediumDate'}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="situaciones-riesgos-detail.edit({id:vm.situaciones_riesgos.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
